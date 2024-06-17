@@ -14,3 +14,7 @@ This is a simple task management app built using Firebase HTML, CSS, and JavaScr
 - Sort tasks alphabetically
 - Filter completed tasks
 - Multiple lists with tabs
+
+## Screenshots
+
+![Screenshot](Screenshot.png)
