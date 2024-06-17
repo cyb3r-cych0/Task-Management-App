@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Task Management App</title>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
+<!--    <script src="/__/firebase/init.js"></script>-->
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Task Management App</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task...">
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+</div>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAYmDdbIkfGfEa_053m1341R13HdR0gPTU",
+    authDomain: "task-management-app-f716b.firebaseapp.com",
+    databaseURL: "https://task-management-app-f716b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "task-management-app-f716b",
+    storageBucket: "task-management-app-f716b.appspot.com",
+    messagingSenderId: "1075488505790",
+    appId: "1:1075488505790:web:2650fb813497e1cf7b03ef",
+    measurementId: "G-7B79F22SY6"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+<script src="app.js" type="module"></script>
+
+
+</body>
+</html>
