@@ -18,3 +18,4 @@ This is a simple task management app built using Firebase HTML, CSS, and JavaScr
 ## Screenshots
 
 ![Screenshot](Screenshot.png)
+
